@@ -20,8 +20,16 @@ jobs:
       run: |
         echo "Application name - ${{ env.APPLICATION_NAME}}"
         echo "Application version - ${{ env.PACKAGE_NAME }}"
+        
+    - name: Print dir before clone
+      run: ls -la
 
-
+    - name: Git clone my repo
+      run: actions/checkout@v1
+      
+    - name: Print dir after clone
+      run: ls -la
+      
   deploy:
     runs-on: ubuntu-latest
     needs: [testing]

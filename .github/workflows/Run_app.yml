@@ -1,5 +1,8 @@
 name: Run_app
-
+env:
+  APPLICATION_NAME: "Application"
+  PACKAGE_NAME    : "app_ver_${{ github.sha }}"
+    
 on: 
   push:
     branches:
@@ -12,6 +15,11 @@ jobs:
     steps:
     - name: Print Hello World Testing
       run: echo "Hello World Testing"
+
+    - name: Print version
+      run: |
+        echo "Application name - ${{ env.APPLICATION_NAME}}"
+        echo "Application version - ${{ env.PACKAGE_NAME }}
 
 
   deploy:

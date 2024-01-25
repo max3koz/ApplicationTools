@@ -19,7 +19,7 @@ jobs:
     - name: Print version
       run: |
         echo "Application name - ${{ env.APPLICATION_NAME}}"
-        echo "Application version - ${{ env.PACKAGE_NAME }}
+        echo "Application version - ${{ env.PACKAGE_NAME }}"
 
 
   deploy:

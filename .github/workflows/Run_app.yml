@@ -1,0 +1,20 @@
+name: Run_app
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+    - run: echo "Hello World Testing"
+
+  deploy:
+    runs-on: ubuntu-latest
+     steps:
+    - name: Print Hello World
+    - run: echo "Hello World Deploy"
+    

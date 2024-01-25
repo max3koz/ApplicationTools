@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Print Hello World
+    - name: Print Hello World Testing
       run: echo "Hello World Testing"
 
 
@@ -19,6 +19,6 @@ jobs:
     needs: [testing]
     
     steps:
-    - name: Print Hello World
+    - name: Print Hello World Deploy
       run: echo "Hello World Deploy"
     

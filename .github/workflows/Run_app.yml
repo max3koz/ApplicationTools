@@ -14,7 +14,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-     steps:
+    steps:
     - name: Print Hello World
     - run: echo "Hello World Deploy"
     

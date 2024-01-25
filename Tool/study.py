@@ -1,7 +1,6 @@
 """
 Open and read file
 
-
 with open('study.py', mode='r+') as file:
     data = file.read()
     file.seek(0, 2)

@@ -8,13 +8,16 @@ on:
 jobs:
   testing:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Print Hello World
-    - run: echo "Hello World Testing"
+      run: echo "Hello World Testing"
+
 
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Print Hello World
-    - run: echo "Hello World Deploy"
+      run: echo "Hello World Deploy"
     

@@ -47,5 +47,6 @@ chicken = int(input("Enter q-ty of the chicken: "))
 cow = int(input("Enter q-ty of the cow: "))
 pig = int(input("Enter q-ty of the pig: "))
 
-legs = chicken*2 + (cow + pig)*4
+legs = chicken * 2 + (cow + pig) * 4
 print(legs)
+
